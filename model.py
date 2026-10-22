@@ -1,4 +1,4 @@
-import torch
+﻿import torch
 import torch.nn as nn
 
 class ResidualBlock(nn.Module):
@@ -22,7 +22,7 @@ class AeroSurrogateNet(nn.Module):
     Deep Residual Surrogate Network for predicting aerodynamic drag coefficient (Cd)
     from 26 parameterized car geometry features.
     """
-    def __init__(self, in_features=26, hidden_dim=256, num_blocks=3):
+    def __init__(self, in_features=26, hidden_dim=128, num_blocks=2):
         super(AeroSurrogateNet, self).__init__()
         self.input_layer = nn.Sequential(
             nn.Linear(in_features, hidden_dim),

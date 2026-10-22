@@ -1,4 +1,4 @@
-﻿upstream_drivaernet/
-venv/
-*.pt
+﻿venv/
 __pycache__/
+*.pt
+*.npy
